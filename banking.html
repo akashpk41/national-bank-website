@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>National Bank || Let's Get Some Money!!</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- custom css -->
+    <style>
+      body {
+        background: #203bf926;
+      }
+      .amount{
+        text-align: center;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center my-3">
+        Welcome To <span class="text-success fw-bold">National Bank</span>
+      </h1>
+      <h4 class="text-center my-4">
+        Let's get some <span class="text-danger fw-bold">Mooooooooney!!!</span>
+      </h4>
+
+      <main>
+        <!-- balance and transaction section start -->
+        <section class="container w-75">
+          <div class="row gy-3">
+            <div class="col-md-4">
+              <div class="bg-info bg-gradient p-3 rounded-3 shadow-lg">
+                <h2>Deposit</h2>
+                <h3 class="fw-bold display-5">$ <span id="deposit-amount" >00</span> </h3>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="bg-warning bg-gradient p-3 rounded-3 shadow-lg">
+                <h2>Withdraw</h2>
+                <h3 class="fw-bold display-5">$ <span id="withdraw-amount" >00</span></h3>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="bg-success bg-gradient p-3 rounded-3 shadow-lg">
+                <h2>Balance</h2>
+                <h3 class="fw-bold display-5">$ <span id="balance-total">15</span></span></h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- balance and transaction section end  -->
+
+          <!-- Deposit and Withdraw section start -->
+
+          <div class="row">
+            <div class="col-md-6 text-center text-sm-start">
+                <div class=" withdraw-section p-4 bg-gradient mt-5 bg-white shadow-lg rounded-3 ">
+                    <h4 class=" mb-3" >Deposit</h4>
+                    <input id="deposit-input" type="number" class="form-control amount " placeholder="$ amount you want to deposit">
+                    <br>
+                    <button id="deposit-btn" class="btn btn-success">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-sm-start ">
+                <div class=" withdraw-section p-4 bg-gradient mt-5 bg-white shadow-lg rounded-3 ">
+                    <h4 class=" mb-3" >Withdraw</h4>
+                    <input id="withdraw-input"  type="number" class="form-control amount " placeholder="$ amount you want to withdraw">
+                    <br>
+                    <button id="withdraw-btn" class="btn btn-success">Withdraw</button>
+                </div>
+            </div>
+          
+        </div>
+        </section>
+
+        <!-- Deposit and Withdraw section end -->
+      </main>
+    </header>
+   
+    <script src="js/banking.js"></script>
+  </body>
+</html>
